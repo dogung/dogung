@@ -37,7 +37,7 @@ const bot = new Telegraf(BOT_TOKEN);
 const web_link = "https://dugongg.netlify.app/";
 
 // Define the URL of the image you want to send
-const imageUrl = "https://postimg.cc/dDVZzf99"; // 📌 **Replace this with your actual image URL**
+const imageUrl = "https://postimg.cc/56cx1Kqb"; // 📌 **Replace this with your actual image URL**
 
 bot.start((ctx) => {
     const startPayload = ctx.startPayload;
@@ -47,12 +47,12 @@ bot.start((ctx) => {
 
     // Send the image with caption and inline keyboard
     ctx.replyWithPhoto(imageUrl, {
-        caption: `*Hey, ${userName}! Welcome to Demo Tap App!*\n\nClick on Play Now to start mining Ton Coin`,
+        caption: `*Hey, ${userName}! Welcome to Dugong Tap App!*\n\nClick on Play Now to start mining Dugong`,
         parse_mode: "Markdown",
         reply_markup: {
             inline_keyboard: [
                 [{ text: "⚡️Play now!⚡️", web_app: { url: urlSent } }],
-                [{ text: "🧩 Join Our Telegram Channel 🧩", url: "https://t.me/vanillaswap_channel" }]
+                [{ text: "🧩 Join Our Telegram Channel 🧩", url: "https://t.me/" }]
                 // [{ text: "Bot App Demo 2 🧩", web_app: { url: urlSentTwo } }],
             ]
         }
